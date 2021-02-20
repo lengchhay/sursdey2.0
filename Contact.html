@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siem Reap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style copy.css">
+</head>
+<style>
+  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(img/8.jpg);
+  background-color: pink;
+}
+.contact .content{
+  font-size: 25px;
+  font-weight: 500;
+  
+}
+.contact .content h2{
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.contact .content p{
+  font-weight: 300;
+  color: rgb(87, 71, 50);
+  
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.container .contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container .contactInfo .box .icon{
+  min-width: 60px;
+  height: 60px;
+  background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.container .contactInfo .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+  font-weight: 500;
+  color: #00bcd4;
+}
+.contactForm{
+  width: 40%;
+  padding: 40px;
+  
+}
+.contactForm h2{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputbox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputbox input,
+.contactForm .inputbox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  
+}
+.contactForm .inputbox span{
+  font-size: 16px;
+  margin: 10px;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+button{
+  width: 100px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background: rgb(22, 151, 236);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+.footer{
+  margin-left: 200px;
+}
+
+</style>
+<body>
+    <div id="fb-root"></div>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero"><h1><span>S</span>ur<span>s</span>dey</h1></a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger"><div class="bar"></div></div>
+            <ul>
+              <li><a href="index.html" data-after="Home">Home</a></li>
+              <li><a href="city.html" data-after="Projects">City</a></li>
+              <li><a href="aboutus.html" data-after="About">About</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="hero" class="banner1">
+      <div class="hero container">
+        <h1 class="section-title"> Hey! It's Contact us <span></span></h1>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="content">
+          <h2>Contact us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, quasi 
+          autem repudiandae, veritatis atque inventore 
+          quaerat eveniet voluptatibus praesentium alias nemo, qui dolorem! Quibusdam,
+          blanditiis doloremque?</p>
+      </div>
+
+      <div class="container">
+          <div class="contactInfo">
+              <div class="box">
+                  <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/map-marker.png"/></div>
+                  <div class="text">
+                      <h3>Address</h3>
+                      <p>456 Sya Camp Road, <br>Owatona, Minnesota, <br>89076</p>
+                  </div>
+              </div>
+
+              <div class="box">
+                  <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png"/></i></div>
+                  <div class="text">
+                      <h3>Email</h3>
+                      <p>text@gmail.com</p>
+                  </div>
+              </div>
+
+              <div class="box">
+                  <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/teacher-phone-call.png"/></div>
+                  <div class="text">
+                      <h3>Phone Number</h3>
+                      <p>+855 986 870</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="contactForm">
+              <form>
+                  <h2>Send Message</h2>
+                  <div class="inputbox">
+                      <span>Full Name</span>
+                      <input type="text" required>
+                      
+                  </div>
+
+                  <div class="inputbox">
+                      <span>Email</span>
+                      <input type="text"  required>
+                      
+                  </div>
+
+                  <div class="inputbox">
+                      <span>Message</span>
+                      <textarea name="message" cols="20" rows="5" required></textarea>
+                      
+                  </div>
+
+                  <button type="submit">Send</button>
+
+              </form>
+          </div>
+
+      </div>
+  </section>
+     
+   
+      <section id="footer">
+        <div class="footer container">
+          <div class="brand"><h1><span>S</span>ur<span>s</span>dey</h1></div>
+          <h2>Your Complete Web Solution</h2>
+          <div class="social-icon" style="padding-left: 450px;">
+            <div class="social-item">
+              <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+            </div>
+            <div class="social-item">
+              <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+            </div>
+            <div class="social-item">
+              <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+            </div>
+            <div class="social-item">
+              <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
+            </div>
+          </div>
+          <p>Copyright © 2020 Arfan. All rights reserved</p>
+        </div>
+      </section>
+    
+    
+       
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
